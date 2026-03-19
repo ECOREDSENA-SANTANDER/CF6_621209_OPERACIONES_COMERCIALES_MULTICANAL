@@ -2,13 +2,15 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 20%
-    right: 10%
+    top: 5%
+    right: 80%
+    width: 15%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
     top: 51%
-    right: 30%
+    right: 90%
+    width: 20%
 
 @keyframes float1
   0%
@@ -16,15 +18,329 @@
   100%
     transform: translateY(0px)
   
+.banner-interno__fondo    
+  background-image: url("../assets/curso/portada/portada.jpg") !important
 
+.banner-principal
+  @media (max-width: $bp-max-md)
+    .tarjeta
+      background-image: url('../assets/curso/portada/fondo-banner-principal-movil.jpg') !important
+      background-repeat: no-repeat 
+      background-size: 100% 100%
+      background-position: cover
+    &__info
+      padding-top: 14% !important 
+    h1, p
+      color: $white
+
+.banner-principal  
+  @media (min-width: 768px) and (max-width: 1024px)
+    .tarjeta
+      background-image: url('../assets/curso/portada/fondo-banner-principal-tablet.jpg') !important
+      background-repeat: no-repeat 
+      background-size: 100% 100%
+      background-position: cover
+    &__info
+      padding-top: 8% !important 
+    h1, p
+      color: $white
 .banner-principal .tarjeta
   background-position: left 50% !important
 .banner-principal__row .banner-principal__img
-  width: 400px !important  
-.titulo-principal.color-acento-contenido .titulo-principal__numero span
-  color: white !important   
+  width: 450px !important  
+.titulo-principal__numero span
+  color: #12263F !important   
 .banner-interno__titulo__icono i
   color: $color-primario
 figcaption
   font-weight: normal
- 
+.titulo-sexto.color-secundario 
+  border-left-color: #3AE3FE !important
+
+.titulo-segundo:after 
+  content: ''
+  display: block
+  height: 5px
+  width: 140px
+  border-left: solid 50px
+  border-left-color: #53BCED
+  background-color: #e8e8e8
+
+// subtitulos
+
+.icon 
+  max-width: 65px
+  left: 35px
+  position: absolute
+
+.icon2
+  max-width: 65px
+  left: -10px
+  position: relative
+
+.icon3
+  max-width: 35px
+  position: relative
+.bg01
+  background-color: #E8EBF3
+.bg02
+  background-color: #EDF8FD
+.bg-img-blue
+  padding: 14px
+  background-color: #1E3A8A
+  border-radius: 0px 0px 50px 0px
+
+.bg-img-blue1
+  padding: 14px
+  background-color: #0D66BF
+  border-radius: 0px 0px 50px 0px
+
+
+// fondos y bordes
+
+.borde-redondo
+  border-radius: 25px
+
+.borde-redondo-abajo
+  border-bottom-left-radius: 20px
+  border-bottom-right-radius: 20px
+
+.borde-redondo-arriba
+  border-top-left-radius: 20px
+  border-top-right-radius: 20px
+
+.borde-recto-abajo
+  border-bottom-left-radius: 0px
+  border-bottom-right-radius: 0px
+
+.borde-recto-arriba
+  border-top-left-radius: 0px
+  border-top-right-radius: 0px
+
+.bgrosado
+  background-color: #FFCEC6
+
+.bgrosado2
+  background-color: #FFEAE7
+
+.bgnaranjaoscuro
+  background-color: #CC5B4A
+
+.bgnaranjaoscuro2
+  background-color: #994437
+
+.bgnaranja
+  background-color: #FF725D
+
+.bgazulclaro
+  background-color: #D2E1F1
+
+.bgazuloscuro
+  background-color: #FE8938
+
+.bgazulclaro
+  background-color: #D4EEFB
+
+// cajon primario azul
+
+.cajon.color-primario 
+  background-color: #E8EBF3
+.cajon.color-acento-contenido 
+  background-color: #FFF3EA
+// Pasos tema 1
+
+.fondo1
+  background: url('../assets/curso/temas/tema1/fondo1.jpg')
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  background-position: center 
+  margin-inline: -3.4rem
+  @media screen and (max-width: 992px)
+    margin-inline: -1.4rem
+
+.fondo2
+  background: url('../assets/curso/temas/tema2/fondo2.jpg')
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  background-position: center 
+  margin-inline: -3.4rem
+  @media screen and (max-width: 992px)
+    margin-inline: -1.4rem
+
+.tarjetaf
+  background-color: #fff
+  border-radius: 15px
+
+.pasos-b__header__item--before .pasos-b__header__item__dot 
+  border-color: #FFCEC6
+  background-color: #FFCEC6
+
+.pasos-b__header__item--before .pasos-b__header__item__line-container:before, .pasos-b__header__item--before .pasos-b__header__item__line-container:after
+  background-color:  #FFCEC6
+
+.pasos-b__header__item--active .pasos-b__header__item__line-container:before
+  background-color: #FFCEC6
+
+.linea-tiempo-c__header__btn, .linea-tiempo-c__header__btn--left, .linea-tiempo-c__header__btn--right, .pasos-b__header__btn--left, .pasos-b__header__btn--right 
+  background-color: #38CE65
+  border: 2px solid #38CE65
+  color: #0D66BF
+
+.pasos-b__header__btn--left:hover, .pasos-b__header__btn--right:hover
+  border-color: #38CE65
+
+//viñetas
+  
+.texto-azul
+  color: #0D66BF
+
+.texto-azulclaro
+  color: #53BCED  
+
+.texto-negro
+  color: black
+
+.texto-naranja
+  color: #FF725D
+
+.fa-ol
+  margin-left: 0 !important
+  li
+    display: flex !important
+    &:before
+      position: relative
+      margin-right: 20px
+      font-size: 1.4rem
+
+// Parametrización Tabs tema 2
+
+.tabs-b.color-acento-contenido .tabs-b__tab--active 
+    border-bottom-color: #FE8938 !important
+    border-top: none
+    border-top-color: transparent !important
+    background-color: #FFF3EA
+    color: #12263F
+
+.tabs-b__tab--active 
+    border-bottom: 5px solid !important
+    border-top: none    
+    background-color: #FFEAE7
+    color: #0D66BF
+
+.tabs-b__tab
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px
+    border-right: 2px solid #53BCED
+    border-bottom: 2px solid #53BCED
+    cursor: pointer
+
+// slyder tema 2
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs 
+  width: 50px
+  height: 50px
+  background-color: #38CE65 !important
+  border-radius: 50%
+  background-image: url(../assets/curso/temas/tema2/iconosly.svg)
+
+.slyder-a__bullets__item
+    background-color: #D2E1F1
+    border-color: #D2E1F1
+
+.slyder-a__bullets__item--active 
+    background-color: #0D66BF
+    border-color: #727997
+    opacity: 1
+
+// bloque de texto comillas tema 2
+
+.bloque-texto-e i 
+  color: #FE8938
+
+// cajon naranja tema 2
+
+.cajon.naranja
+  background-color: #FFEAE7
+
+.cajon.naranja:before 
+    background-color: #FF725D
+
+// slyder pequeño del tema 2  
+
+.tarjeta--naranja
+  background-color: #FFEAE7
+
+// slyder tarjetas tema 3
+
+.bggris
+  background-color: #BAE4F8
+
+.slyder-f__btn 
+  color: #38CE65
+
+///////// Card hover ------tema 3
+
+.crd_hover_txt
+  position: relative
+  padding: 0 !important
+  overflow: hidden !important
+  border-radius: 10px
+.crd_hover_txt .crd_hover_txt--body
+  position: absolute
+  padding: 1.5rem
+  width: 100%
+  bottom: 0
+  transition: all .5s ease-in-out
+  transform: translateY(calc(100% - 3.85rem))
+
+.crd_hover_txt:hover .crd_hover_txt--body
+  transition: all .5s ease-in-out
+  transform: translateY(0)
+  background-color: #BAE4F8 !important
+.crd_hover_txt:hover .crd_hover_txt--body *
+  color: #12263F !important
+
+.cambio
+  background-color: #FE8938
+
+// tarjetas pequeñas tema4
+
+.bgblanco
+  background-color: white
+
+// ajuste maquetación tarjeta con imagen pegada
+
+.corrermargen
+  margin-left: -23px
+
+// ajuste flechas mobile
+
+.slyder-a__bullets__item--active 
+
+@media (max-width: 768px) 
+    .slyder-a__bullets__item 
+        width: 11px
+        height: 11px
+        margin: 0px 0.5px
+
+@media (max-width: 768px)  
+  .slyder-a__btn--sigt, .slyder-a__btn--atrs
+    width: 30px
+    height: 30px
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs 
+    width: 50px
+    height: 50px
+    background-color: #FFD947
+    border-radius: 50%
+    background-repeat: no-repeat
+    background-size: 16px 24px
+    background-position: center
+    border: 1px solid #D8ECFF
+    z-index: 10000
+    opacity: 0.7
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0.3)
+    transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+    cursor: pointer
